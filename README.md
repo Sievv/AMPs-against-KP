@@ -34,3 +34,9 @@ Example :
 ![image](https://github.com/user-attachments/assets/b922e820-c8cf-4996-a0c9-503d5f8e9d25)
 
 
+Data splitting 
+
+![image](https://github.com/user-attachments/assets/51195e51-1b1d-40ee-b447-3dfca9c32e8c)
+
+
+
