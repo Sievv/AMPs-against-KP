@@ -33,6 +33,11 @@ Example :
 
 ![image](https://github.com/user-attachments/assets/b922e820-c8cf-4996-a0c9-503d5f8e9d25)
 
+3 difference Techniques that have been use 
+
+![image](https://github.com/user-attachments/assets/0fa35567-75a7-4428-ac55-769832d462a5)
+
+
 
 Data splitting 
 
