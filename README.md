@@ -35,13 +35,10 @@ Example :
 
 3 difference Techniques that have been use 
 
-![image](https://github.com/user-attachments/assets/0fa35567-75a7-4428-ac55-769832d462a5)
-
 
 
 Data splitting 
 
-![image](https://github.com/user-attachments/assets/51195e51-1b1d-40ee-b447-3dfca9c32e8c)
 
 
 
