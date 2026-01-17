@@ -121,7 +121,7 @@ Libraries: pandas, scikit-learn, Biopython, XGBoost, SHAP
 
 Main notebook:
 
-KP_imbalance.ipynb
+[KP_imbalance.ipynb](https://github.com/Sievv/AMPs-against-KP/blob/main/KP_imbalance.ipynb)
 
 
 
