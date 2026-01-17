@@ -1,5 +1,9 @@
+This repository contains the machine-learning pipeline used in the study:
 
+Machine-learning prediction of antimicrobial peptides active against Klebsiella pneumoniae using physicochemical descriptors and ensemble classification
 # AMPs-against-KP
+The project focuses on identifying and interpreting antimicrobial peptides (AMPs) active against clinically important Gram-negative pathogens, with an emphasis on biological interpretability and real-world relevance.
+
 *Clinically Significant Pathogens:
 ![image](https://github.com/user-attachments/assets/9d314034-8749-4d36-9a34-cbb8f335fb37)
 These three bacteria are major causes of hospital- and community-acquired infections, including pneumonia, urinary tract infections, bloodstream infections, and wound infections.
@@ -15,7 +19,15 @@ All three are Gram-negative bacteria, which have a unique outer membrane structu
 ![image](https://github.com/user-attachments/assets/c3959db5-7060-4cac-ab3d-885486d2f0c2)
 ![image](https://github.com/user-attachments/assets/bae3975a-cd7f-4f96-9da1-0b4c6e24fd20)
 
+Dataset Overview
 
+Active peptides: 138 experimentally validated AMPs active against Klebsiella pneumoniae
+
+Inactive peptides: 373 non-AMP peptide or protein fragments
+
+Class distribution: Intentionally imbalanced to reflect real-world AMP availability
+
+The dataset was curated from public databases and literature, prioritizing pathogen-specific and experimentally validated peptides rather than synthetic or purely predicted sequences.
 
 📅 Description of Peptide Feature Calculations
 Feature	Description
@@ -33,11 +45,84 @@ Example :
 
 ![image](https://github.com/user-attachments/assets/b922e820-c8cf-4996-a0c9-503d5f8e9d25)
 
-3 difference Techniques that have been use 
+ Machine-Learning Framework
+Three Modeling Techniques Used
 
+This study applies three complementary machine-learning strategies:
 
+Tree-based ensemble models
 
-Data splitting 
+Random Forest
+
+Gradient Boosting
+
+AdaBoost
+These models capture nonlinear relationships between physicochemical descriptors and AMP activity.
+
+Kernel-based model
+
+Support Vector Machine (RBF kernel)
+Used as a strong baseline for nonlinear classification.
+
+Boosted decision trees
+
+XGBoost
+Evaluated for performance comparison and robustness.
+
+Model Evaluation
+
+Models were evaluated using:
+
+Accuracy
+
+Precision
+
+Sensitivity (Recall)
+
+Specificity
+
+F1 score
+
+Matthews Correlation Coefficient (MCC)
+
+ROC-AUC
+
+PR-AUC (emphasized due to data imbalance)
+
+Performance was assessed using stratified cross-validation and an independent external validation set consisting of experimentally confirmed anti-K. pneumoniae peptides.
+
+Interpretability and Biological Insight
+
+Random Forest was selected as the primary model due to:
+
+Stable performance across folds
+
+Strong PR-AUC under imbalanced conditions
+
+Ability to model nonlinear interactions
+
+High interpretability via:
+
+Gini importance
+
+Permutation importance
+
+SHAP analysis
+
+These features support biological interpretation and downstream AMP design, which are central goals of this study.
+
+Reproducibility
+
+Platform: Google Colab
+
+Language: Python
+
+Libraries: pandas, scikit-learn, Biopython, XGBoost, SHAP
+
+Main notebook:
+
+KP_imbalance.ipynb
+
 
 
 
